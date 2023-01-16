@@ -5,9 +5,9 @@ function SidebarMenu({ url, iconRight, text, iconLeft }) {
   return (
     <div className="rounded-sm">
       <Link to={url}>
-        {iconRight}
-        <span>{text}</span>
-        {iconLeft}
+        <span className="">{iconRight}</span>
+        <span className="hidden pr-2 xl:inline">{text}</span>
+        <div className="hidden xl:inline">{iconLeft}</div>
       </Link>
     </div>
   );

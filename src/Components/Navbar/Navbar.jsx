@@ -6,35 +6,32 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 
 function Navbar() {
   return (
-    <div className="flex justify-between items-center px-2">
-      <div>
+    <div className="sm:flex sm:justify-between sm:items-center px-2">
+      <div className="text-blue-800 hidden sm:inline">
         <Link to="/">اپلیکیشن</Link>
         <KeyboardArrowLeftIcon />
         <span>داشبرد</span>
       </div>
       <div className="flex justify-between items-center">
-        <div className="bg-yellow-300 rounded-3xl pl-2">
+        <div className="sm:bg-yellow-300 rounded-3xl sm:pl-2">
           <input
             type="search"
-            className="outline-none p-3 bg-yellow-300 rounded-3xl"
+            className="outline-none p-3 bg-yellow-300 rounded-3xl hidden sm:inline"
             placeholder="جستجو"
-            
           />
           <Link to="/">
             <SearchIcon />
           </Link>
         </div>
-        <div className="p-5 relative">
+        <div className="p-5 relative mr-auto">
           <NotificationsNoneIcon />
           <span className="absolute top-5 left-6 bg-red-500 rounded-full p-1"></span>
         </div>
-        <div>
-          <img
-            src="../../../images/avatar/Mohammadjt2.png"
-            alt="avatar"
-            className="rounded-full w-10"
-          />
-        </div>
+        <img
+          src="../../../images/avatar/Mohammadjt2.png"
+          alt="avatar"
+          className="rounded-full w-10"
+        />
       </div>
     </div>
   );
