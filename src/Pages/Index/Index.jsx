@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import SidebarMenu from "../../Components/SidebarMenu/SidebarMenu";
 import SidebarSubMenu from "../../Components/SidebarSubMenu/SidebarSubMenu";
@@ -23,11 +23,21 @@ import WebIcon from "@mui/icons-material/Web";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import FormatListNumberedRtlIcon from "@mui/icons-material/FormatListNumberedRtl";
 import DatasetIcon from "@mui/icons-material/Dataset";
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 
 import "./Index.css";
 
 function Index() {
+  const [showMenu, setShowMenu] = useState("hidden");
+
+  const menuHandler = () => {
+    if (showMenu === "hidden") {
+      setShowMenu("block");
+    } else {
+      setShowMenu("hidden");
+    }
+  };
+
   return (
     <div dir="rtl" className="md:flex bg-yellow-500 px-8 py-5 h-full">
       <nav className="xl:w-60 text-inherit">
@@ -44,21 +54,19 @@ function Index() {
               </div>
             </Link>
           </div>
-          <div className="pt-3 pr-2 inline md:hidden">
+          <div className="pt-3 pr-2 inline md:hidden" onClick={menuHandler}>
             <MenuIcon fontSize="large" />
           </div>
         </div>
         <hr className="my-5 border-yellow-600 md:w-full" />
-        <div className="hidden md:inline">
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<HomeIcon fontSize="large" />
-              text="داشبرد"
-              iconLeft=<ExpandMoreIcon />
-            />
-          </div>
-          <ul className="bg-yellow-600 rounded w-11/12 mr-2 hidden">
+        <div className={`${showMenu} md:inline`}>
+          <SidebarMenu
+            url="/"
+            iconRight=<HomeIcon fontSize="large" />
+            text="داشبرد"
+            iconLeft=<ExpandMoreIcon />
+          />
+          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu
               url="/"
               icon=<ElectricBoltIcon />
@@ -75,71 +83,56 @@ function Index() {
               text="نمای شماره سه"
             />
           </ul>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<WidgetsIcon fontSize="large" />
-              text="چیدمان منو"
-              iconLeft=<ExpandMoreIcon />
-            />
-          </div>
-          <ul className="bg-yellow-600 rounded w-11/12 mr-2 hidden">
+          <SidebarMenu
+            className="md:hover:bg-yellow-200"
+            url="/"
+            iconRight=<WidgetsIcon fontSize="large" />
+            text="چیدمان منو"
+            iconLeft=<ExpandMoreIcon />
+          />
+          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="منو ساده" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="منو بالا" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="منو کنار" />
           </ul>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<InboxIcon fontSize="large" />
-              text="صندوق ورودی"
-            />
-          </div>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<FolderIcon fontSize="large" />
-              text="مدیریت فایل"
-            />
-          </div>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<CreditCardIcon fontSize="large" />
-              text="نمای فروش"
-            />
-          </div>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<ChatBubbleIcon fontSize="large" />
-              text="چت"
-            />
-          </div>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<PostAddIcon fontSize="large" />
-              text="پست"
-            />
-          </div>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<CalendarMonthIcon fontSize="large" />
-              text="تقویم"
-            />
-          </div>
+          <SidebarMenu
+            url="/"
+            iconRight=<InboxIcon fontSize="large" />
+            text="صندوق ورودی"
+          />
+          <SidebarMenu
+            url="/"
+            iconRight=<FolderIcon fontSize="large" />
+            text="مدیریت فایل"
+          />
+          <SidebarMenu
+            url="/"
+            iconRight=<CreditCardIcon fontSize="large" />
+            text="نمای فروش"
+          />
+          <SidebarMenu
+            url="/"
+            iconRight=<ChatBubbleIcon fontSize="large" />
+            text="چت"
+          />
+          <SidebarMenu
+            url="/"
+            iconRight=<PostAddIcon fontSize="large" />
+            text="پست"
+          />
+          <SidebarMenu
+            url="/"
+            iconRight=<CalendarMonthIcon fontSize="large" />
+            text="تقویم"
+          />
           <hr className="my-5 border-yellow-600" />
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<NoteAltIcon fontSize="large" />
-              text="کراد"
-              iconLeft=<ExpandMoreIcon />
-            />
-          </div>
-          <ul className="bg-yellow-600 rounded w-11/12 mr-2 hidden">
+          <SidebarMenu
+            url="/"
+            iconRight=<NoteAltIcon fontSize="large" />
+            text="کراد"
+            iconLeft=<ExpandMoreIcon />
+          />
+          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu
               url="/"
               icon=<ElectricBoltIcon />
@@ -147,28 +140,24 @@ function Index() {
             />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="فرم" />
           </ul>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<GroupIcon fontSize="large" />
-              text="کاربران"
-              iconLeft=<ExpandMoreIcon />
-            />
-          </div>
-          <ul className="bg-yellow-600 rounded w-11/12 mr-2 hidden">
+          <SidebarMenu
+            url="/"
+            iconRight=<GroupIcon fontSize="large" />
+            text="کاربران"
+            iconLeft=<ExpandMoreIcon />
+          />
+          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="کاربر یک" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="کاربر دو" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="کاربر سه" />
           </ul>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<PermContactCalendarIcon fontSize="large" />
-              text="پروفایل"
-              iconLeft=<ExpandMoreIcon />
-            />
-          </div>
-          <ul className="bg-yellow-600 rounded w-11/12 mr-2 hidden">
+          <SidebarMenu
+            url="/"
+            iconRight=<PermContactCalendarIcon fontSize="large" />
+            text="پروفایل"
+            iconLeft=<ExpandMoreIcon />
+          />
+          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu
               url="/"
               icon=<ElectricBoltIcon />
@@ -185,15 +174,13 @@ function Index() {
               text="نمای کلی سه"
             />
           </ul>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<WebIcon fontSize="large" />
-              text="صفحات"
-              iconLeft=<ExpandMoreIcon />
-            />
-          </div>
-          <ul className="bg-yellow-600 rounded w-11/12 mr-2 hidden">
+          <SidebarMenu
+            url="/"
+            iconRight=<WebIcon fontSize="large" />
+            text="صفحات"
+            iconLeft=<ExpandMoreIcon />
+          />
+          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="بلاگ" />
             <SidebarSubMenu
               url="/"
@@ -221,30 +208,24 @@ function Index() {
             />
           </ul>
           <hr className="my-5 border-yellow-600" />
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<BarChartIcon fontSize="large" />
-              text="نمودار ها"
-            />
-          </div>
-          <div className="py-2 pr-2 rounded-r-3xl duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<FormatListNumberedRtlIcon fontSize="large" />
-              text="فرم ها"
-            />
-          </div>
-          <div className="py-2 pr-2 rounded-r-3xl md:ml-4 duration-300 hover:bg-yellow-200">
-            <SidebarMenu
-              url="/"
-              iconRight=<DatasetIcon fontSize="large" />
-              text="دیتا ها"
-            />
-          </div>
+          <SidebarMenu
+            url="/"
+            iconRight=<BarChartIcon fontSize="large" />
+            text="نمودار ها"
+          />
+          <SidebarMenu
+            url="/"
+            iconRight=<FormatListNumberedRtlIcon fontSize="large" />
+            text="فرم ها"
+          />
+          <SidebarMenu
+            url="/"
+            iconRight=<DatasetIcon fontSize="large" />
+            text="دیتا ها"
+          />
         </div>
       </nav>
-      <section className="bg-yellow-200 h-full w-full rounded-3xl text-sm px-5 text-zinc-600">
+      <section className="bg-yellow-200 h-full w-full rounded-lg-3xl text-sm px-5 text-zinc-600">
         <Navbar />
         <div className="border-solid border-t-2 2xl:border-l-2 border-yellow-600 mt-1 px-2 py-6 flex justify-between items-center">
           <Content />
