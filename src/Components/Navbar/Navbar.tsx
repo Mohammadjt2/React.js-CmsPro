@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import SearchIcon from "@mui/icons-material/Search";

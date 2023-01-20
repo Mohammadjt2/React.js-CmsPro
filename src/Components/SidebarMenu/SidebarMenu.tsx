@@ -1,18 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-function SidebarMenu({ url, iconRight, text, iconLeft }) {
-  const [hoverIcon, setHoverIcon] = useState("");
-  const hoverIconHandler = () => {
+interface ISidebarMenu {
+  className?: string
+  url: string
+  iconRight: JSX.Element
+  text: string
+  iconLeft?: JSX.Element
+}
+
+function SidebarMenu({ url, iconRight, text, iconLeft }: ISidebarMenu) {
+  const [hoverIcon, setHoverIcon] = useState<string>("");
+  const hoverIconHandler = (): void => {
     setHoverIcon("animate-bounce");
   };
-  const blurIconHandler = () => {
+  const blurIconHandler = (): void => {
     setHoverIcon("animate-none");
   };
 
   return (
     <div
-      className="p-2 rounded-r-3xl duration-300 md:hover:bg-yellow-200 " onMouseOver={hoverIconHandler} onMouseOut={blurIconHandler}
+      className="p-2 rounded-r-3xl duration-300 md:hover:bg-yellow-200 hover:cursor-pointer" onMouseOver={hoverIconHandler} onMouseOut={blurIconHandler}
     >
       <div className="rounded-sm">
         <Link to={url}>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import SidebarMenu from "../../Components/SidebarMenu/SidebarMenu";
 import SidebarSubMenu from "../../Components/SidebarSubMenu/SidebarSubMenu";
@@ -28,15 +28,16 @@ import MenuIcon from "@mui/icons-material/Menu";
 import "./Index.css";
 
 function Index() {
-  const [showMenu, setShowMenu] = useState("hidden");
+  const [showMenu, setShowMenu] = useState<string>("hidden");
 
-  const menuHandler = () => {
+  const menuHandler = (): void => {
     if (showMenu === "hidden") {
       setShowMenu("block");
     } else {
       setShowMenu("hidden");
     }
   };
+
 
   return (
     <div dir="rtl" className="md:flex bg-yellow-500 px-8 py-5 h-full">
@@ -225,7 +226,7 @@ function Index() {
           />
         </div>
       </nav>
-      <section className="bg-yellow-200 h-full w-full rounded-lg-3xl text-sm px-5 text-zinc-600">
+      <section className="bg-yellow-200 h-full w-full rounded-3xl text-sm px-5 text-zinc-600">
         <Navbar />
         <div className="border-solid border-t-2 2xl:border-l-2 border-yellow-600 mt-1 px-2 py-6 flex justify-between items-center">
           <Content />
