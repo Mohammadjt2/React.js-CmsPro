@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: IranianSans;
-    src: url(../public/font/IranianSans.ttf);
+  font-family: IranianSans;
+  src: url(../public/font/IranianSans.ttf);
 }
 
-body{
-    font-family: IranianSans;
-    font-size: 18px;
+body {
+  font-family: IranianSans;
+  font-size: 18px;
 }

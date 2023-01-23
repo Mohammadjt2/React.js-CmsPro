@@ -27,7 +27,7 @@ function Navbar() {
           <span className="absolute top-5 left-6 bg-red-500 rounded-full p-1"></span>
         </div>
         <img
-          src="../../../images/avatar/Mohammadjt2.png"
+          src="../../../images/Avatar/Mohammadjt2.png"
           alt="avatar"
           className="rounded-full w-10"
         />

@@ -1,9 +1,110 @@
+import { Link } from "react-router-dom";
+import SidbarLeftUsers from "../SidbarLeftUsers/SidbarLeftUsers";
+import RecentActivities from "../RecentActivities/RecentActivities";
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import Swiper from "../Swiper/Swiper";
+import Calendar from "../Calendar/Calendar";
+
 
 function SidebarLeft() {
   return (
-    <div className="w-96">
-      <h3 className="font-black text-xl">تراکنش ها</h3>
-    </div>
+    <>
+      <div className="w-2/6">
+        <h3 className="font-black text-xl mr-3">تراکنش ها</h3>
+        <SidbarLeftUsers
+          img="../../../images/SidbarLeftUsers/1.jpg"
+          name="کوین اسپیسی"
+          date="27 شهریور 1401"
+          profit="+159 تومان"
+        />
+        <SidbarLeftUsers
+          img="../../../images/SidbarLeftUsers/2.jpg"
+          name="رابرت دنیرو"
+          date="2 مهر 1401"
+          profit="+71 تومان"
+        />
+        <SidbarLeftUsers
+          img="../../../images/SidbarLeftUsers/3.jpg"
+          name="جان تراولتا"
+          date="14 آبان 1401"
+          profit="+29 تومان"
+        />
+        <SidbarLeftUsers
+          img="../../../images/SidbarLeftUsers/4.jpg"
+          name="آرنولد شوایتگز"
+          date="16 آذر 1401"
+          profit="+411 تومان"
+        />
+        <SidbarLeftUsers
+          img="../../../images/SidbarLeftUsers/5.jpg"
+          name="راسل کرو"
+          date="11 بهمن 1401"
+          profit="+121 تومان"
+        />
+        <div className="flex justify-center items-stretch">
+          <button className="block p-3 w-full mx-3 rounded border-dotted border-2 border-yellow-600">
+            مشاهده بیشتر
+          </button>
+        </div>
+        <div className="p-3 flex justify-between items-center">
+          <span className="font-bold">فعالیت های اخیر</span>
+          <span className="text-blue-800">
+            <Link to="/">بیشتر</Link>
+          </span>
+        </div>
+        <RecentActivities
+          img="../../../images/RecentActivities/1.jpg"
+          name="دنزل واشینگتون"
+          time="07:00 صبح"
+          bio="به تیم پیوسته است"
+        />
+        <RecentActivities
+          img="../../../images/RecentActivities/2.jpg"
+          name="آرنولد شوایتگز"
+          time="07:21 صبح"
+          bio="3 عکس جدید اضافه کرد"
+        />
+        <p className="opacity-75 flex justify-center">
+          12 بهمن
+        </p>
+        <RecentActivities
+          img="../../../images/RecentActivities/3.jpg"
+          name="کیانو ریورز"
+          time="07:03 صبح"
+          bio="تغییر سونی مستر سریز ای ناین جی قیمت و توضیحات"
+        />
+        <RecentActivities
+          img="../../../images/RecentActivities/4.jpg"
+          name="جانی دپ"
+          time="06:58 صبح"
+          bio="تغییر نیکون ضد توضیحات"
+        />
+        <div className="p-4 flex justify-between items-center">
+          <span className="font-bold">یاداشت های مهم</span>
+          <div>
+            <span className="border border-neutral-400 p-1 m-1 rounded-lg cursor-pointer">
+              <ChevronRightIcon />
+            </span>
+            <span className="border border-neutral-400 p-1 m-1 rounded-lg cursor-pointer">
+              <ChevronLeftIcon />
+            </span>
+          </div>
+        </div>
+        <div className="bg-yellow-100 mx-3 p-3 rounded-md cursor-pointer border border-neutral-400">
+          <Swiper />
+        </div>
+        <div className="p-3 my-3 flex justify-between items-center">
+          <span className="font-bold">برنامه ها</span>
+          <span className="text-blue-800">
+            <Link to="/">+ افزودن برنامه های جدید</Link>
+          </span>
+        </div>
+        <div className="flex justify-center items-center">
+          <Calendar />
+        </div>
+      </div>
+    </>
   );
 }
 
