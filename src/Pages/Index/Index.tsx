@@ -39,8 +39,11 @@ function Index() {
   };
 
   return (
-    <div dir="rtl" className="md:flex bg-yellow-500 px-8 py-5 h-full">
-      <nav className="xl:w-60 text-inherit">
+    <div
+      dir="rtl"
+      className="md:flex md:justify-center md:items-start bg-yellow-500 md:px-8 px-2 md:py-5 py-1 h-full"
+    >
+      <nav className="xl:w-60 text-inherit ">
         <div className="flex justify-between items-center">
           <div>
             <Link
@@ -225,9 +228,9 @@ function Index() {
           />
         </div>
       </nav>
-      <section className="bg-yellow-200 h-full w-full rounded-3xl text-sm px-5 text-zinc-600">
+      <section className="bg-yellow-200 h-full w-full rounded-3xl text-sm sm:px-5 text-zinc-600">
         <Navbar />
-        <div className="border-solid border-t-2 2xl:border-l-2 border-yellow-600 mt-1 px-2 py-6 flex justify-between items-start">
+        <div className="border-solid border-t-2 2xl:border-l-2 border-yellow-600 mt-1 px-2 py-6 2xl:flex 2xl:justify-between 2xl:items-start">
           <Content />
           <SidebarLeft />
         </div>

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 interface ISidebarMenu {
-  className?: string
-  url: string
-  iconRight: JSX.Element
-  text: string
-  iconLeft?: JSX.Element
+  className?: string;
+  url: string;
+  iconRight: JSX.Element;
+  text: string;
+  iconLeft?: JSX.Element;
 }
 
 function SidebarMenu({ url, iconRight, text, iconLeft }: ISidebarMenu) {
@@ -20,7 +20,9 @@ function SidebarMenu({ url, iconRight, text, iconLeft }: ISidebarMenu) {
 
   return (
     <div
-      className="p-2 rounded-r-3xl duration-300 md:hover:bg-yellow-200 hover:cursor-pointer" onMouseOver={hoverIconHandler} onMouseOut={blurIconHandler}
+      className="p-2 rounded-r-3xl duration-300 md:hover:bg-yellow-200 hover:cursor-pointer"
+      onMouseOver={hoverIconHandler}
+      onMouseOut={blurIconHandler}
     >
       <div className="rounded-sm">
         <Link to={url}>
