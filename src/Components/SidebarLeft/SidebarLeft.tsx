@@ -9,8 +9,8 @@ import Calendar from "../Calendar/Calendar";
 function SidebarLeft() {
   return (
     <>
-      <div className="2xl:w-2/6 2xl:block lg:flex lg:justify-between lg:items-start relative">
-        <div className="lg:mt-72 2xl:mt-0 lg:w-96">
+      <div className="2xl:w-1/4 2xl:block lg:flex lg:justify-between lg:items-start relative mr-3">
+        <div className="lg:mt-72 2xl:mt-0 lg:w-96 2xl:w-auto">
           <h3 className="font-black text-xl mr-3">تراکنش ها</h3>
           <SidbarLeftUsers
             img="../../../images/SidbarLeftUsers/1.jpg"
@@ -48,7 +48,7 @@ function SidebarLeft() {
             </button>
           </div>
         </div>
-        <div className="lg:mt-72 2xl:mt-0 block">
+        <div className="lg:mt-72 2xl:mt-0">
           <div className="px-3 2xl:my-3 pb-1 flex justify-between items-center">
             <span className="font-bold">فعالیت های اخیر</span>
             <span className="text-blue-800">

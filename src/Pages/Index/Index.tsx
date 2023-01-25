@@ -231,7 +231,9 @@ function Index() {
       <section className="bg-yellow-200 h-full w-full rounded-3xl text-sm sm:px-5 text-zinc-600">
         <Navbar />
         <div className="border-solid border-t-2 2xl:border-l-2 border-yellow-600 mt-1 px-2 py-6 2xl:flex 2xl:justify-between 2xl:items-start">
-          <Content />
+          <div className="w-full">
+            <Content />
+          </div>
           <SidebarLeft />
         </div>
       </section>
