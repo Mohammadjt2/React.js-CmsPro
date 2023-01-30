@@ -9,7 +9,7 @@ interface ISalesCard {
 }
 
 function SalesCard({ icon, percent, arrow, number, text }: ISalesCard) {
-  const [arrows, setArrows] = useState<string>(
+  const [arrows] = useState<string>(
     arrow.type.type.render.displayName
   );
   const [percentBgColor, setPercentBgColor] = useState<string>("");
@@ -27,7 +27,10 @@ function SalesCard({ icon, percent, arrow, number, text }: ISalesCard) {
       <div className="h-40 my-3 p-4 bg-yellow-300 border border-1 border-slate-400 rounded-lg cursor-pointer duration-300 shadow hover:shadow-xl">
         <div className="flex justify-between items-start">
           <span className="text-blue-600">{icon}</span>
-          <span className={`${percentBgColor} rounded-2xl p-1 text-white`}>
+          <span
+            className={`${percentBgColor} rounded-2xl p-1 text-white`}
+            title={`${percent} درصد`}
+          >
             <span className="text-xs">
               {percent}
               <span>%</span>
