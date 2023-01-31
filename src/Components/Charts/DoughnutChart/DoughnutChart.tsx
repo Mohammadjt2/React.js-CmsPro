@@ -1,9 +1,9 @@
 import React from 'react'
 
-function AreaChart() {
+function DoughnutChart() {
   return (
-    <div>AreaChart</div>
+    <canvas>AreaChart</canvas>
   )
 }
 
-export default AreaChart
+export default DoughnutChart

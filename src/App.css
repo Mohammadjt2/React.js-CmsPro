@@ -1,0 +1,15 @@
+.rmdp-top-class {
+  width: 100%;
+}
+
+.rmdp-calendar {
+  width: 100%;
+}
+
+.rmdp-day-picker > div {
+  width: 100%;
+}
+
+.rmdp-month-picker {
+  background-color: #facc15 !important;
+}
