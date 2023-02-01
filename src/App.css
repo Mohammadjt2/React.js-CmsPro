@@ -13,3 +13,10 @@
 .rmdp-month-picker {
   background-color: #facc15 !important;
 }
+
+#pie{
+  width: 15rem;
+}
+#doughnut{
+  width: 15rem;
+}

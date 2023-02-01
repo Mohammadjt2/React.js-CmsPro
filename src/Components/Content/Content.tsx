@@ -58,9 +58,9 @@ function Content() {
           />
         </div>
         <div className="flex justify-between items-start">
-          <div className="flex-none w-2/5">
-            <div className="flex justify-between items-center p-2">
-              <h3 className="font-black text-lg">گزارش فروش</h3>
+          <div className="grow ">
+            <div className="flex justify-between items-center p-1">
+              <h3 className="font-black text-xl">گزارش فروش</h3>
               <DatePicker
                 className="bg-yellow-400 font-bold"
                 placeholder="لطفا ماه را وارد کنید"
@@ -84,26 +84,116 @@ function Content() {
               <LineChart />
             </div>
           </div>
-          <div className="mt-2">
+          <div>
             <div className="flex justify-between items-center px-2 py-1">
-              <h3 className="font-black text-sm">فروش بالای هفتگی</h3>
+              <h3 className="font-black text-sm">گزارش فروش هفتگی</h3>
               <Link to="/" className="text-blue-800">
                 بیشتر
               </Link>
             </div>
             <div className="bg-yellow-100 border border-slate-400 m-1 rounded-lg p-2">
               <DoughnutChart />
+              <div className="flex justify-between items-center">
+                <span className="font-bold">
+                  درصد فروش هفته
+                  <span style={{ color: "rgb(54, 162, 235)" }}> اول </span> 
+                </span>
+                <span
+                  style={{
+                    backgroundColor: "rgb(54, 162, 235)",
+                    color: "white",
+                  }}
+                  className="p-1 m-1 rounded-lg"
+                >
+                  28%
+                </span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="font-bold">
+                  درصد فروش هفته
+                  <span style={{ color: "rgb(255, 99, 132)" }}> دوم </span> 
+                </span>
+                <span
+                  style={{
+                    backgroundColor: "rgb(255, 99, 132)",
+                    color: "white",
+                  }}
+                  className="p-1 m-1 rounded-lg"
+                >
+                  18%
+                </span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="font-bold">
+                  درصد فروش هفته
+                  <span style={{ color: "rgb(255, 160, 86)" }}> سوم </span> 
+                </span>
+                <span
+                  style={{
+                    backgroundColor: "rgb(255, 160, 86)",
+                    color: "white",
+                  }}
+                  className="p-1 m-1 rounded-lg"
+                >
+                  54%
+                </span>
+              </div>
             </div>
           </div>
-          <div className="mt-2">
+          <div>
             <div className="flex justify-between items-center px-2 py-1">
-              <h3 className="font-black text-sm">گزارش فروش</h3>
+              <h3 className="font-black text-sm">گزارش فروش ماهانه</h3>
               <Link to="/" className="text-blue-800">
                 بیشتر
               </Link>
             </div>
             <div className="bg-yellow-100 border border-slate-400 m-1 rounded-lg p-2">
               <PieChart />
+              <div className="flex justify-between items-center">
+                <span className="font-bold">
+                  درصد فروش 
+                  <span style={{ color: "rgb(54, 162, 235)" }}> مهر </span> ماه
+                </span>
+                <span
+                  style={{
+                    backgroundColor: "rgb(54, 162, 235)",
+                    color: "white",
+                  }}
+                  className="p-1 m-1 rounded-lg"
+                >
+                  10%
+                </span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="font-bold">
+                  درصد فروش 
+                  <span style={{ color: "rgb(255, 99, 132)" }}> آبان </span> ماه
+                </span>
+                <span
+                  style={{
+                    backgroundColor: "rgb(255, 99, 132)",
+                    color: "white",
+                  }}
+                  className="p-1 m-1 rounded-lg"
+                >
+                  30%
+                </span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="font-bold">
+                  درصد فروش 
+                  <span style={{ color: "rgb(255, 160, 86)" }}> آذر </span> ماه
+                </span>
+                <span
+                  style={{
+                    backgroundColor: "rgb(255, 160, 86)",
+                    color: "white",
+                  }}
+                  className="p-1 m-1 rounded-lg"
+                >
+                  60%
+                </span>
+              </div>
             </div>
           </div>
         </div>

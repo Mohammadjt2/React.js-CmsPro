@@ -43,7 +43,7 @@ function Index() {
       dir="rtl"
       className="md:flex md:justify-center md:items-start bg-yellow-500 md:px-8 px-2 md:py-5 py-1 h-full"
     >
-      <nav className="xl:w-60 text-inherit ">
+      <nav className="xl:w-1/6 text-inherit">
         <div className="flex justify-between items-center">
           <div>
             <Link

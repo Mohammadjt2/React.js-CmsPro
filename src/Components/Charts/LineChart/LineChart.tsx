@@ -15,7 +15,7 @@ function LineChart(): JSX.Element {
       { ماه: 9, فروش: 44 },
     ];
 
-    new Chart("acquisitions", {
+    new Chart("line", {
       type: "line",
       data: {
         labels: data.map((row) => row.ماه),
@@ -53,7 +53,7 @@ function LineChart(): JSX.Element {
           </select>
         </div>
       </div>
-      <canvas id="acquisitions"></canvas>
+      <canvas id="line"></canvas>
     </>
   );
 }
