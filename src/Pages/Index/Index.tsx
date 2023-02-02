@@ -41,16 +41,16 @@ function Index() {
   return (
     <div
       dir="rtl"
-      className="md:flex md:justify-center md:items-start bg-yellow-500 md:px-8 px-2 md:py-5 py-1 h-full"
+      className="md:flex md:justify-center md:items-start bg-yellow-500 md:px-8 lg:pr-4 px-2 md:py-5 py-1 h-full"
     >
       <nav className="xl:w-1/6 text-inherit">
         <div className="flex justify-between items-center">
           <div>
             <Link
               to="/"
-              className="flex justify-start items-center text-2xl pt-3 pr-2"
+              className="flex justify-start items-center text-2xl pt-3 px-2"
             >
-              <LayersIcon fontSize="large" />
+              <LayersIcon  fontSize="large" />
               <div className="hidden xl:inline">
                 رو
                 <span className="font-black">بیک</span>
@@ -58,14 +58,14 @@ function Index() {
             </Link>
           </div>
           <div className="pt-3 pr-2 inline md:hidden" onClick={menuHandler}>
-            <MenuIcon fontSize="large" />
+            <MenuIcon  fontSize="large" />
           </div>
         </div>
         <hr className="my-5 border-yellow-600 md:w-full" />
         <div className={`${showMenu} md:inline`}>
           <SidebarMenu
             url="/"
-            iconRight=<HomeIcon fontSize="large" />
+            iconRight=<HomeIcon/>
             text="داشبرد"
             iconLeft=<ExpandMoreIcon />
           />
@@ -89,7 +89,7 @@ function Index() {
           <SidebarMenu
             className="md:hover:bg-yellow-200"
             url="/"
-            iconRight=<WidgetsIcon fontSize="large" />
+            iconRight=<WidgetsIcon/>
             text="چیدمان منو"
             iconLeft=<ExpandMoreIcon />
           />
@@ -100,38 +100,38 @@ function Index() {
           </ul>
           <SidebarMenu
             url="/"
-            iconRight=<InboxIcon fontSize="large" />
+            iconRight=<InboxIcon/>
             text="صندوق ورودی"
           />
           <SidebarMenu
             url="/"
-            iconRight=<FolderIcon fontSize="large" />
+            iconRight=<FolderIcon/>
             text="مدیریت فایل"
           />
           <SidebarMenu
             url="/"
-            iconRight=<CreditCardIcon fontSize="large" />
+            iconRight=<CreditCardIcon/>
             text="نمای فروش"
           />
           <SidebarMenu
             url="/"
-            iconRight=<ChatBubbleIcon fontSize="large" />
+            iconRight=<ChatBubbleIcon/>
             text="چت"
           />
           <SidebarMenu
             url="/"
-            iconRight=<PostAddIcon fontSize="large" />
+            iconRight=<PostAddIcon/>
             text="پست"
           />
           <SidebarMenu
             url="/"
-            iconRight=<CalendarMonthIcon fontSize="large" />
+            iconRight=<CalendarMonthIcon/>
             text="تقویم"
           />
           <hr className="my-5 border-yellow-600" />
           <SidebarMenu
             url="/"
-            iconRight=<NoteAltIcon fontSize="large" />
+            iconRight=<NoteAltIcon/>
             text="کراد"
             iconLeft=<ExpandMoreIcon />
           />
@@ -145,7 +145,7 @@ function Index() {
           </ul>
           <SidebarMenu
             url="/"
-            iconRight=<GroupIcon fontSize="large" />
+            iconRight=<GroupIcon/>
             text="کاربران"
             iconLeft=<ExpandMoreIcon />
           />
@@ -156,7 +156,7 @@ function Index() {
           </ul>
           <SidebarMenu
             url="/"
-            iconRight=<PermContactCalendarIcon fontSize="large" />
+            iconRight=<PermContactCalendarIcon/>
             text="پروفایل"
             iconLeft=<ExpandMoreIcon />
           />
@@ -179,7 +179,7 @@ function Index() {
           </ul>
           <SidebarMenu
             url="/"
-            iconRight=<WebIcon fontSize="large" />
+            iconRight=<WebIcon/>
             text="صفحات"
             iconLeft=<ExpandMoreIcon />
           />
@@ -213,17 +213,17 @@ function Index() {
           <hr className="my-5 border-yellow-600" />
           <SidebarMenu
             url="/"
-            iconRight=<BarChartIcon fontSize="large" />
+            iconRight=<BarChartIcon/>
             text="نمودار ها"
           />
           <SidebarMenu
             url="/"
-            iconRight=<FormatListNumberedRtlIcon fontSize="large" />
+            iconRight=<FormatListNumberedRtlIcon/>
             text="فرم ها"
           />
           <SidebarMenu
             url="/"
-            iconRight=<DatasetIcon fontSize="large" />
+            iconRight=<DatasetIcon/>
             text="دیتا ها"
           />
         </div>

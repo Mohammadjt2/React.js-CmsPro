@@ -9,7 +9,7 @@ import Calendar from "../Calendar/Calendar";
 function SidebarLeft() {
   return (
     <>
-      <div className="2xl:w-1/4 2xl:block lg:flex lg:justify-between lg:items-start relative mr-3">
+      <div className="2xl:w-1/4 2xl:block lg:flex lg:justify-between lg:items-start relative 2xl:mr-3">
         <div className="lg:mt-72 2xl:mt-0 lg:w-96 2xl:w-auto">
           <h3 className="font-black text-xl mr-3">تراکنش ها</h3>
           <SidbarLeftUsers
