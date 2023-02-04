@@ -20,7 +20,7 @@ function SidebarMenu({ url, iconRight, text, iconLeft }: ISidebarMenu) {
 
   return (
     <div
-      className="p-2 rounded-r-3xl duration-300 md:hover:bg-yellow-200 hover:cursor-pointer"
+      className="p-2 rounded-r-3xl duration-300 md:hover:bg-blue-200 hover:cursor-pointer"
       onMouseOver={hoverIconHandler}
       onMouseOut={blurIconHandler}
     >

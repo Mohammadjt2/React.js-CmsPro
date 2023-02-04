@@ -24,7 +24,7 @@ function SalesCard({ icon, percent, arrow, number, text }: ISalesCard) {
 
   return (
     <div className="sm:w-6/12 xl:w-3/12">
-      <div className=" my-3 p-4 bg-yellow-300 border border-1 border-slate-400 rounded-lg cursor-pointer duration-300 shadow hover:shadow-xl h-48">
+      <div className=" my-3 p-4 bg-blue-300 border border-1 border-slate-400 rounded-lg cursor-pointer duration-300 shadow hover:shadow-xl h-48">
         <div className="flex justify-between items-start">
           <span className="text-blue-600">{icon}</span>
           <span

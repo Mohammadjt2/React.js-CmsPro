@@ -9,7 +9,7 @@ interface IUsers {
 
 function SidbarLeftUsers({ img, name, date, profit }: IUsers) {
   return (
-    <div className="flex justify-between items-center m-2 px-2 py-2 2xl:p-3 2xl:m-3 cursor-pointer duration-300 bg-yellow-100 rounded-xl shadow hover:shadow-xl hover:mx-1 border border-slate-400 sm:px-6 lg:px-2">
+    <div className="flex justify-between items-center m-2 px-2 py-2 2xl:p-3 2xl:m-3 cursor-pointer duration-300 bg-blue-100 rounded-xl shadow hover:shadow-xl hover:mx-1 border border-slate-400 sm:px-6 lg:px-2">
       <div className="flex justify-between items-center">
         <img src={img} alt="avatar" className="rounded-full w-10 h-10" />
         <div className="mr-4 flex justify-between items-center lg:block">

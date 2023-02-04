@@ -12,10 +12,10 @@ function Navbar() {
         <span>داشبرد</span>
       </div>
       <div className="flex justify-between items-center">
-        <div className="sm:bg-yellow-300 rounded-3xl sm:pl-2">
+        <div className="sm:bg-blue-300 rounded-3xl sm:pl-2">
           <input
             type="search"
-            className="outline-none p-3 bg-yellow-300 rounded-3xl hidden sm:inline"
+            className="outline-none p-3 bg-blue-300 rounded-3xl hidden sm:inline"
             placeholder="جستجو"
           />
           <Link to="/">

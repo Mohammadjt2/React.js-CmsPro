@@ -46,7 +46,7 @@ function LineChart(): JSX.Element {
           </div>
         </div>
         <div>
-          <select className="p-2 text-sm font-bold bg-yellow-300 rounded-md">
+          <select className="p-2 text-sm font-bold bg-blue-300 rounded-md">
             <option value="فیلتر دسته بندی">فیلتر دسته بندی</option>
             <option value="کامپیوتر و لپ تاپ">کامپیوتر و لپتاپ</option>
             <option value="گوشی هوشمند">گوشی هوشمند</option>

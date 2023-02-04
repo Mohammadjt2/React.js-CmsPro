@@ -4,9 +4,9 @@ import Chart from "chart.js/auto";
 function PieChart(): JSX.Element {
   useEffect(() => {
     const data = [
-      { ماه: 7, فروش: 10 },
-      { ماه: 8, فروش: 30 },
-      { ماه: 9, فروش: 60 },
+      { ماه: 10, فروش: 10 },
+      { ماه: 11, فروش: 41 },
+      { ماه: 12, فروش: 49 },
     ];
 
     new Chart("pie", {

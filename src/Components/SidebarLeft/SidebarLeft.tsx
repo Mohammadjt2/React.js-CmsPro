@@ -9,7 +9,7 @@ import Calendar from "../Calendar/Calendar";
 function SidebarLeft() {
   return (
     <>
-      <div className="2xl:w-1/4 2xl:block lg:flex lg:justify-between lg:items-start relative 2xl:mr-3">
+      <div className="text-black 2xl:w-1/4 2xl:block lg:flex lg:justify-between lg:items-start relative 2xl:mr-3">
         <div className="lg:mt-72 2xl:mt-0 lg:w-96 2xl:w-auto">
           <h3 className="font-black text-xl mr-3">تراکنش ها</h3>
           <SidbarLeftUsers
@@ -43,7 +43,7 @@ function SidebarLeft() {
             profit="+121 تومان"
           />
           <div className="flex justify-center items-stretch">
-            <button className="block p-3 w-full mx-3 rounded border-dotted border-2 border-yellow-600">
+            <button className="block p-3 w-full mx-3 rounded border-dotted border-2 border-blue-600">
               مشاهده بیشتر
             </button>
           </div>
@@ -92,7 +92,7 @@ function SidebarLeft() {
                 </span>
               </div>
             </div>
-            <div className="bg-yellow-100 mx-3 p-3 rounded-md cursor-pointer border border-neutral-400">
+            <div className="bg-blue-100 mx-3 p-3 rounded-md cursor-pointer border border-neutral-400">
               <Swiper />
             </div>
           </div>
@@ -106,6 +106,9 @@ function SidebarLeft() {
           </div>
           <div className="flex justify-center items-center mt-4 lg:mr-2">
             <Calendar />
+          </div>
+          <div className="text-center text-xl leading-10 font-bold py-5">
+            💖》ℳ๑みสℳℳสの《💖
           </div>
         </div>
       </div>

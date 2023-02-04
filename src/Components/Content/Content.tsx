@@ -14,10 +14,11 @@ import DatePicker from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
 import SidbarLeftUsers from "../SidbarLeftUsers/SidbarLeftUsers";
+import TopProducts from "../TopProducts/TopProducts";
 
 function Content() {
   return (
-    <>
+    <div className="text-black">
       <div>
         <div className="flex justify-between items-center">
           <h3 className="font-black text-xl">گزارش کلی</h3>
@@ -62,7 +63,7 @@ function Content() {
           <div className="flex justify-between items-stretch p-1">
             <h3 className="font-black text-xl">گزارش فروش</h3>
             <DatePicker
-              className="bg-yellow-300 font-bold"
+              className="bg-blue-300 font-bold"
               placeholder="لطفا ماه را وارد کنید"
               onlyMonthPicker
               format="MMMM YYYY"
@@ -74,13 +75,13 @@ function Content() {
                 borderRadius: "15px",
                 border: "1px #0c8af8 solid",
                 padding: " 4px 12px",
-                backgroundColor: "#facc15",
+                backgroundColor: "rgb(37 99 235)",
                 height: "32px",
                 boxShadow: "0 0 2px #0074d9",
               }}
             />
           </div>
-          <div className="bg-yellow-100 border border-slate-400 m-1 rounded-lg p-2 mx-auto">
+          <div className="bg-blue-100 border border-slate-400 m-1 rounded-lg p-2 mx-auto">
             <LineChart />
           </div>
         </div>
@@ -126,7 +127,7 @@ function Content() {
                   بیشتر
                 </Link>
               </div>
-              <div className="bg-yellow-100 border border-slate-400 m-1 rounded-lg p-2">
+              <div className="bg-blue-100 border border-slate-400 m-1 rounded-lg p-2">
                 <DoughnutChart />
                 <div className="flex justify-between items-center">
                   <span className="font-bold">
@@ -182,12 +183,12 @@ function Content() {
                   بیشتر
                 </Link>
               </div>
-              <div className="bg-yellow-100 border border-slate-400 m-1 rounded-lg p-2">
+              <div className="bg-blue-100 border border-slate-400 m-1 rounded-lg p-2">
                 <PieChart />
                 <div className="flex justify-between items-center">
                   <span className="font-bold">
                     درصد فروش
-                    <span style={{ color: "rgb(54, 162, 235)" }}> مهر </span>
+                    <span style={{ color: "rgb(54, 162, 235)" }}> دی </span>
                     ماه
                   </span>
                   <span
@@ -203,7 +204,7 @@ function Content() {
                 <div className="flex justify-between items-center">
                   <span className="font-bold">
                     درصد فروش
-                    <span style={{ color: "rgb(255, 99, 132)" }}> آبان </span>
+                    <span style={{ color: "rgb(255, 99, 132)" }}> بهمن </span>
                     ماه
                   </span>
                   <span
@@ -213,13 +214,13 @@ function Content() {
                     }}
                     className="p-1 m-1 rounded-lg"
                   >
-                    30%
+                    41%
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="font-bold">
                     درصد فروش
-                    <span style={{ color: "rgb(255, 160, 86)" }}> آذر </span>
+                    <span style={{ color: "rgb(255, 160, 86)" }}> اسفند </span>
                     ماه
                   </span>
                   <span
@@ -229,7 +230,7 @@ function Content() {
                     }}
                     className="p-1 m-1 rounded-lg"
                   >
-                    60%
+                    49%
                   </span>
                 </div>
               </div>
@@ -237,7 +238,10 @@ function Content() {
           </div>
         </div>
       </div>
-    </>
+      <div>
+        <TopProducts/>
+      </div>
+    </div>
   );
 }
 

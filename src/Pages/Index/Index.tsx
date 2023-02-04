@@ -41,7 +41,7 @@ function Index() {
   return (
     <div
       dir="rtl"
-      className="md:flex md:justify-center md:items-start bg-yellow-500 md:px-8 lg:pr-4 px-2 md:py-5 py-1 h-full"
+      className="md:flex md:justify-center md:items-start bg-blue-500 md:px-8 lg:pr-4 px-2 md:py-5 py-1 h-full"
     >
       <nav className="xl:w-1/6 text-inherit">
         <div className="flex justify-between items-center">
@@ -61,7 +61,7 @@ function Index() {
             <MenuIcon  fontSize="large" />
           </div>
         </div>
-        <hr className="my-5 border-yellow-600 md:w-full" />
+        <hr className="my-5 border-blue-600 md:w-full" />
         <div className={`${showMenu} md:inline`}>
           <SidebarMenu
             url="/"
@@ -69,7 +69,7 @@ function Index() {
             text="داشبرد"
             iconLeft=<ExpandMoreIcon />
           />
-          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
+          <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu
               url="/"
               icon=<ElectricBoltIcon />
@@ -87,13 +87,13 @@ function Index() {
             />
           </ul>
           <SidebarMenu
-            className="md:hover:bg-yellow-200"
+            className="md:hover:bg-blue-200"
             url="/"
             iconRight=<WidgetsIcon/>
             text="چیدمان منو"
             iconLeft=<ExpandMoreIcon />
           />
-          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
+          <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="منو ساده" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="منو بالا" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="منو کنار" />
@@ -128,14 +128,14 @@ function Index() {
             iconRight=<CalendarMonthIcon/>
             text="تقویم"
           />
-          <hr className="my-5 border-yellow-600" />
+          <hr className="my-5 border-blue-600" />
           <SidebarMenu
             url="/"
             iconRight=<NoteAltIcon/>
             text="کراد"
             iconLeft=<ExpandMoreIcon />
           />
-          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
+          <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu
               url="/"
               icon=<ElectricBoltIcon />
@@ -149,7 +149,7 @@ function Index() {
             text="کاربران"
             iconLeft=<ExpandMoreIcon />
           />
-          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
+          <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="کاربر یک" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="کاربر دو" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="کاربر سه" />
@@ -160,7 +160,7 @@ function Index() {
             text="پروفایل"
             iconLeft=<ExpandMoreIcon />
           />
-          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
+          <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu
               url="/"
               icon=<ElectricBoltIcon />
@@ -183,7 +183,7 @@ function Index() {
             text="صفحات"
             iconLeft=<ExpandMoreIcon />
           />
-          <ul className="bg-yellow-400 rounded-lg w-11/12 mr-2 hidden">
+          <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="بلاگ" />
             <SidebarSubMenu
               url="/"
@@ -210,7 +210,7 @@ function Index() {
               text="تغییر رمز عبور"
             />
           </ul>
-          <hr className="my-5 border-yellow-600" />
+          <hr className="my-5 border-blue-600" />
           <SidebarMenu
             url="/"
             iconRight=<BarChartIcon/>
@@ -228,9 +228,9 @@ function Index() {
           />
         </div>
       </nav>
-      <section className="bg-yellow-200 h-full w-full rounded-3xl text-sm sm:px-5 text-zinc-600">
+      <section className="bg-blue-200 h-full w-full rounded-3xl text-sm sm:px-5 text-zinc-600">
         <Navbar />
-        <div className="border-solid border-t-2 2xl:border-l-2 border-yellow-600 mt-1 px-2 py-6 2xl:flex 2xl:justify-between 2xl:items-start">
+        <div className="border-solid border-t-2 2xl:border-l-2 border-blue-600 mt-1 px-2 py-6 2xl:flex 2xl:justify-between 2xl:items-start">
           <div className="w-full">
             <Content />
           </div>

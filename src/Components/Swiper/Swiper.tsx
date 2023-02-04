@@ -9,6 +9,7 @@ import "swiper/css/scrollbar";
 const Swipers = () => {
   return (
     <Swiper
+      style={{color:"block"}}
       className="2xl:max-w-xs"
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       slidesPerView={1}
@@ -29,12 +30,12 @@ const Swipers = () => {
       </SwiperSlide>
       <div className="flex justify-between mt-auto">
         <input
-          className="p-2 bg-yellow-300 rounded font-bold my-4 cursor-help"
+          className="p-2 bg-blue-300 rounded font-bold my-4 cursor-help"
           type="button"
           value="مشاهد نکته"
         />
         <input
-          className="p-2 bg-yellow-300 rounded font-bold my-4 cursor-grab"
+          className="p-2 bg-blue-300 rounded font-bold my-4 cursor-grab"
           type="button"
           value="رد کردن"
         />
