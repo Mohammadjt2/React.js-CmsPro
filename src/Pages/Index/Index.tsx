@@ -50,7 +50,7 @@ function Index() {
               to="/"
               className="flex justify-start items-center text-2xl pt-3 px-2"
             >
-              <LayersIcon  fontSize="large" />
+              <LayersIcon fontSize="large" />
               <div className="hidden xl:inline">
                 رو
                 <span className="font-black">بیک</span>
@@ -58,17 +58,19 @@ function Index() {
             </Link>
           </div>
           <div className="pt-3 pr-2 inline md:hidden" onClick={menuHandler}>
-            <MenuIcon  fontSize="large" />
+            <MenuIcon fontSize="large" />
           </div>
         </div>
         <hr className="my-5 border-blue-600 md:w-full" />
         <div className={`${showMenu} md:inline`}>
-          <SidebarMenu
-            url="/"
-            iconRight=<HomeIcon/>
-            text="داشبرد"
-            iconLeft=<ExpandMoreIcon />
-          />
+          <div>
+            <SidebarMenu
+              url="/"
+              iconRight=<HomeIcon />
+              text="داشبرد"
+              iconLeft=<ExpandMoreIcon />
+            />
+          </div>
           <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu
               url="/"
@@ -86,55 +88,35 @@ function Index() {
               text="نمای شماره سه"
             />
           </ul>
-          <SidebarMenu
-            className="md:hover:bg-blue-200"
-            url="/"
-            iconRight=<WidgetsIcon/>
-            text="چیدمان منو"
-            iconLeft=<ExpandMoreIcon />
-          />
+          <div>
+            <SidebarMenu
+              className="md:hover:bg-blue-200"
+              url="/"
+              iconRight=<WidgetsIcon />
+              text="چیدمان منو"
+              iconLeft=<ExpandMoreIcon />
+            />
+          </div>
           <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="منو ساده" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="منو بالا" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="منو کنار" />
           </ul>
-          <SidebarMenu
-            url="/"
-            iconRight=<InboxIcon/>
-            text="صندوق ورودی"
-          />
-          <SidebarMenu
-            url="/"
-            iconRight=<FolderIcon/>
-            text="مدیریت فایل"
-          />
-          <SidebarMenu
-            url="/"
-            iconRight=<CreditCardIcon/>
-            text="نمای فروش"
-          />
-          <SidebarMenu
-            url="/"
-            iconRight=<ChatBubbleIcon/>
-            text="چت"
-          />
-          <SidebarMenu
-            url="/"
-            iconRight=<PostAddIcon/>
-            text="پست"
-          />
-          <SidebarMenu
-            url="/"
-            iconRight=<CalendarMonthIcon/>
-            text="تقویم"
-          />
+          <SidebarMenu url="/" iconRight=<InboxIcon /> text="صندوق ورودی" />
+          <SidebarMenu url="/" iconRight=<FolderIcon /> text="مدیریت فایل" />
+          <SidebarMenu url="/" iconRight=<CreditCardIcon /> text="نمای فروش" />
+          <SidebarMenu url="/" iconRight=<ChatBubbleIcon /> text="چت" />
+          <SidebarMenu url="/" iconRight=<PostAddIcon /> text="پست" />
+          <SidebarMenu url="/" iconRight=<CalendarMonthIcon /> text="تقویم" />
           <hr className="my-5 border-blue-600" />
-          <SidebarMenu
-            url="/"
-            iconRight=<NoteAltIcon/>
-            text="کراد"
-            iconLeft=<ExpandMoreIcon />
-          />
+          <div>
+            <SidebarMenu
+              url="/"
+              iconRight=<NoteAltIcon />
+              text="کراد"
+              iconLeft=<ExpandMoreIcon />
+            />
+          </div>
           <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu
               url="/"
@@ -143,23 +125,27 @@ function Index() {
             />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="فرم" />
           </ul>
-          <SidebarMenu
-            url="/"
-            iconRight=<GroupIcon/>
-            text="کاربران"
-            iconLeft=<ExpandMoreIcon />
-          />
+          <div>
+            <SidebarMenu
+              url="/"
+              iconRight=<GroupIcon />
+              text="کاربران"
+              iconLeft=<ExpandMoreIcon />
+            />
+          </div>
           <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="کاربر یک" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="کاربر دو" />
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="کاربر سه" />
           </ul>
-          <SidebarMenu
-            url="/"
-            iconRight=<PermContactCalendarIcon/>
-            text="پروفایل"
-            iconLeft=<ExpandMoreIcon />
-          />
+          <div>
+            <SidebarMenu
+              url="/"
+              iconRight=<PermContactCalendarIcon />
+              text="پروفایل"
+              iconLeft=<ExpandMoreIcon />
+            />
+          </div>
           <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu
               url="/"
@@ -177,12 +163,14 @@ function Index() {
               text="نمای کلی سه"
             />
           </ul>
-          <SidebarMenu
-            url="/"
-            iconRight=<WebIcon/>
-            text="صفحات"
-            iconLeft=<ExpandMoreIcon />
-          />
+          <div>
+            <SidebarMenu
+              url="/"
+              iconRight=<WebIcon />
+              text="صفحات"
+              iconLeft=<ExpandMoreIcon />
+            />
+          </div>
           <ul className="bg-blue-400 rounded-lg w-11/12 mr-2 hidden">
             <SidebarSubMenu url="/" icon=<ElectricBoltIcon /> text="بلاگ" />
             <SidebarSubMenu
@@ -211,21 +199,13 @@ function Index() {
             />
           </ul>
           <hr className="my-5 border-blue-600" />
+          <SidebarMenu url="/" iconRight=<BarChartIcon /> text="نمودار ها" />
           <SidebarMenu
             url="/"
-            iconRight=<BarChartIcon/>
-            text="نمودار ها"
-          />
-          <SidebarMenu
-            url="/"
-            iconRight=<FormatListNumberedRtlIcon/>
+            iconRight=<FormatListNumberedRtlIcon />
             text="فرم ها"
           />
-          <SidebarMenu
-            url="/"
-            iconRight=<DatasetIcon/>
-            text="دیتا ها"
-          />
+          <SidebarMenu url="/" iconRight=<DatasetIcon /> text="دیتا ها" />
         </div>
       </nav>
       <section className="bg-blue-200 h-full w-full rounded-3xl text-sm sm:px-5 text-zinc-600">

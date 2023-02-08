@@ -37,6 +37,12 @@ function SidebarLeft() {
             profit="+411 تومان"
           />
           <SidbarLeftUsers
+            img="../../../images/SidbarLeftUsers/2.jpg"
+            name="آلبرت انیشتن"
+            date="17 دی 1401"
+            profit="+301 تومان"
+          />
+          <SidbarLeftUsers
             img="../../../images/SidbarLeftUsers/5.jpg"
             name="راسل کرو"
             date="11 بهمن 1401"
@@ -79,6 +85,13 @@ function SidebarLeft() {
             name="جانی دپ"
             time="06:58 صبح"
             bio="تغییر نیکون ضد توضیحات"
+          />
+          <p className="opacity-75 flex justify-center">18 بهمن</p>
+          <RecentActivities
+            img="../../../images/RecentActivities/1.jpg"
+            name="الکس تیندر"
+            time="07:11 صبح"
+            bio="تغییرات در چیدمان عکس ها"
           />
           <div className="lg:absolute 2xl:static top-0 right-0 lg:w-full">
             <div className="p-4 flex justify-between items-center">
