@@ -107,9 +107,6 @@ function SidebarLeft() {
           <div className="flex justify-center items-center mt-4 lg:mr-2">
             <Calendar />
           </div>
-          <div className="text-center text-xl leading-10 font-bold py-5">
-            💖》ℳ๑みสℳℳสの《💖
-          </div>
         </div>
       </div>
     </>
